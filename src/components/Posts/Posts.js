@@ -17,7 +17,7 @@ export default function Posts() {
   `)
 
   return (
-    <div>
+    <div className={classes.root}>
       <p className={classes.heading}>Posts</p>
       {data.posts.nodes.map(({ slug, title, createdAt }) => (
         <>

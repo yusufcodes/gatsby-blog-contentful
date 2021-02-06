@@ -9,9 +9,6 @@ export const query = graphql`
   query($slug: String!) {
     post: contentfulPost(slug: { eq: $slug }) {
       title
-      author {
-        name
-      }
       body {
         raw
       }
@@ -24,9 +21,11 @@ export default function BlogPost({ data }) {
   return (
     <>
       <Header />
-      <h1 className={classes.title}>{post.title}</h1>
-      {renderRichText(post.body)}
-      <Footer />
+      <div className={classes.root}>
+        <h1 className={classes.title}>{post.title}</h1>
+        {renderRichText(post.body)}
+        <Footer />
+      </div>
     </>
   )
 }

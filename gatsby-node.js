@@ -17,9 +17,6 @@ exports.createPages = async ({ graphql, actions }) => {
           id
           slug
           title
-          author {
-            name
-          }
           body {
             raw
           }
