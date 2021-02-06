@@ -1,6 +1,11 @@
 require("dotenv").config()
 
 module.exports = {
+  siteMetadata: {
+    title: `yusufcodes`,
+    siteUrl: `https://www.yusufcodes.xyz`,
+    description: `Blog for yusufcodes`,
+  },
   /* Your site config here */
   plugins: [
     {

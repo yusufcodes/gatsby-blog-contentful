@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import Header from "../components/Header/Header"
+import Footer from "../components/Footer/Footer"
 import classes from "./Post.module.css"
 
 export const query = graphql`
@@ -21,11 +22,11 @@ export const query = graphql`
 export default function BlogPost({ data }) {
   const post = data.post
   return (
-    <div>
+    <>
       <Header />
-      <h1>{post.title}</h1>
-      <h2 className={classes.author}>Author: {post.author.name}</h2>
+      <h1 className={classes.title}>{post.title}</h1>
       {renderRichText(post.body)}
-    </div>
+      <Footer />
+    </>
   )
 }

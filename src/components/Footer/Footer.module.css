@@ -1,0 +1,21 @@
+.root {
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+}
+
+.heading {
+  font-size: 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+}
