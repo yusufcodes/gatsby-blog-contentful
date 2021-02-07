@@ -3,8 +3,15 @@ require("dotenv").config()
 module.exports = {
   siteMetadata: {
     title: `yusufcodes`,
-    siteUrl: `https://www.yusufcodes.xyz`,
-    description: `Blog for yusufcodes`
+    author: {
+      name: `Yusuf`,
+      summary: `A software developer based in Manchester, UK, who is blogging about their experiences.`
+    },
+    siteUrl: `https://www.yusufcodes.com`,
+    description: `Blog for yusufcodes`,
+    social: {
+      twitter: `yusufcodes`
+    }
   },
   /* Your site config here */
   plugins: [
@@ -17,6 +24,16 @@ module.exports = {
         host: `preview.contentful.com`
       }
     },
-    `@contentful/gatsby-transformer-contentful-richtext`
+    `@contentful/gatsby-transformer-contentful-richtext`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/assets`,
+        name: `assets`
+      }
+    }
   ]
 }
