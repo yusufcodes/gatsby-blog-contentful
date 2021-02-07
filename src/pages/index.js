@@ -17,7 +17,7 @@ export default function Home() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>yusufcodes</title>
-        <link rel="canonical" href="http://www.yusufcodes.com" />
+        <link rel="canonical" href="https://www.yusufcodes.com" />
       </Helmet>
       <Header />
       <Body />
