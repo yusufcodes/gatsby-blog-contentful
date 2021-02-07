@@ -44,14 +44,17 @@ export default function BlogPost({ data }) {
       </Helmet> */}
       <SEO title={post.title} />
       <div className={classes.root}>
-        <h1 className={classes.title}>{post.title}</h1>
-        {renderRichText(post.body)}
-        <p>
-          Thank you for reading my blog post! If you liked it, and want to be
-          notified for more posts, find me on my various social media channels
-          through the buttons below. I'd also love any feedback you may have
-          about my writing 😊
-        </p>
+        <div className={classes.body}>
+          <h1 className={classes.title}>{post.title}</h1>
+
+          {renderRichText(post.body)}
+          <p>
+            Thank you for reading my blog post! If you liked it, and want to be
+            notified for more posts, find me on my various social media channels
+            through the buttons below. I'd also love any feedback you may have
+            about my writing 😊
+          </p>
+        </div>
         <Footer />
       </div>
     </>
