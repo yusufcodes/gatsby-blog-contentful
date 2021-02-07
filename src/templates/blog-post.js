@@ -42,13 +42,7 @@ export default function BlogPost({ data }) {
         <title>{post.title} | yusufcodes</title>
         <link rel="canonical" href={`http://www.yusufcodes.com/${post.slug}`} />
       </Helmet> */}
-      <SEO
-        title={post.title}
-        imageUrl={constructUrl(
-          data.site.siteMetadata.siteUrl,
-          data.markdownRemark.frontmatter.image?.childImageSharp?.fixed?.src
-        )}
-      />
+      <SEO title={post.title} />
       <div className={classes.root}>
         <h1 className={classes.title}>{post.title}</h1>
         {renderRichText(post.body)}
