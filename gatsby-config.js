@@ -4,19 +4,18 @@ module.exports = {
   siteMetadata: {
     title: `yusufcodes`,
     siteUrl: `https://www.yusufcodes.xyz`,
-    description: `Blog for yusufcodes`,
+    description: `Blog for yusufcodes`
   },
   /* Your site config here */
   plugins: [
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `uwoaomvuao0g`,
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-        host: `cdn.contentful.com`,
-      },
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+      }
     },
-    `@contentful/gatsby-transformer-contentful-richtext`,
-  ],
+    `@contentful/gatsby-transformer-contentful-richtext`
+  ]
 }
