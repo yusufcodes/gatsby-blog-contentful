@@ -12,3 +12,10 @@
   font-size: 40px;
   text-align: center;
 }
+
+@media (max-width: 480px) {
+  .body,
+  .heading {
+    text-align: left;
+  }
+}

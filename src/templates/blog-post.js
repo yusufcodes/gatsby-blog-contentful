@@ -30,9 +30,6 @@ export const query = graphql`
   }
 `
 
-const constructUrl = (baseUrl, path) =>
-  !baseUrl || !path ? null : `${baseUrl}${path}`
-
 export default function BlogPost({ data }) {
   const post = data.post
   return (
