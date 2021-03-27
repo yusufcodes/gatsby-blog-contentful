@@ -48,6 +48,7 @@ export default function BlogPost({ data }) {
           <h1 className={classes.title}>{post.title}</h1>
 
           {renderRichText(post.body)}
+          <p className={classes.wave}>👋🏼</p>
           <p>
             Thank you for reading my blog post! If you liked it, and want to be
             notified for more posts, find me on my various social media channels
