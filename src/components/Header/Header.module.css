@@ -1,9 +1,15 @@
+@media only screen and (max-width: 600px) {
+  .root {
+    text-align: center;
+  }
+}
+
 .heading {
   font-family: "Josefin Sans", sans-serif;
   font-style: italic;
 }
 
 .link {
-  /* text-decoration: none; */
+  text-decoration: none;
   color: black;
 }

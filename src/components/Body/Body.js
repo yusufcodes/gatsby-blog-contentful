@@ -12,8 +12,9 @@ export default function Body() {
         part-time as a developer along the way.
       </p>
       <p>
-        Currently working with all things JavaScript: React, Gatsby, the
-        JAMStack, and more! <span>&#128104;&#127997;&#8205;&#128187;</span>
+        Currently working with all things JavaScript: React Native Expo, React,
+        Gatsby, the JAMStack, and more!{" "}
+        <span>&#128104;&#127997;&#8205;&#128187;</span>
       </p>
       <p>
         Have a read of some of my experiences below{" "}

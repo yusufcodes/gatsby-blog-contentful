@@ -10,7 +10,7 @@ export default function Posts() {
         nodes {
           slug
           title
-          createdAt(fromNow: true)
+          createdAt
         }
       }
     }
@@ -24,7 +24,9 @@ export default function Posts() {
           <div key={`post-${slug}`} className={classes.postContainer}>
             <Link to={`/${slug}`} className={classes.link}>
               <p className={classes.title}>{title}</p>
-              <p className={classes.date}>{createdAt}</p>
+              <p className={classes.date}>
+                {new Date(createdAt).toLocaleDateString()}
+              </p>
             </Link>
           </div>
         </>
