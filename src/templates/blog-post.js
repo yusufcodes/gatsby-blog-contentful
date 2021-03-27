@@ -15,6 +15,7 @@ export const query = graphql`
         raw
       }
       slug
+      createdAt
     }
     site {
       siteMetadata {
@@ -46,7 +47,9 @@ export default function BlogPost({ data }) {
       <div className={classes.root}>
         <div className={classes.body}>
           <h1 className={classes.title}>{post.title}</h1>
-
+          <p className={classes.date}>
+            {new Date(post.createdAt).toLocaleDateString()}
+          </p>
           {renderRichText(post.body)}
           <p className={classes.wave}>👋🏼</p>
           <p>
