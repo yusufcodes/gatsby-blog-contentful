@@ -8,8 +8,12 @@ export default function Body() {
         Hi, I'm Yusuf <span>&#128075;&#127996;</span>
       </p>
       <p>
-        I'm a final year Computer Science student based in Manchester, working
-        part-time as a developer along the way.
+        I'm a BSc Computer Science Graduate (2021), and a React Native Developer
+        @ App Sapiens, working with React, React Native & the JAMStack.
+      </p>
+      <p>
+        I hope to use this blog to document my journey as a student and
+        early-career developer.
       </p>
       <p>
         Currently working with all things JavaScript: React Native Expo, React,
