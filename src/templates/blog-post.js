@@ -35,11 +35,6 @@ export default function BlogPost({ data }) {
   return (
     <>
       <Header />
-      {/* <Helmet>
-        <meta charSet="utf-8" />
-        <title>{post.title} | yusufcodes</title>
-        <link rel="canonical" href={`http://www.yusufcodes.com/${post.slug}`} />
-      </Helmet> */}
       <SEO title={post.title} />
       <div className={classes.root}>
         <div className={classes.body}>
