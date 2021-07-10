@@ -5,7 +5,7 @@ import instagram from "./instagram.svg"
 export default function Footer() {
   return (
     <div className={classes.root}>
-      <p className={classes.heading}>Find me on:</p>
+      <p className={classes.heading}>Contact Me:</p>
 
       <div className={classes.icons}>
         <a
